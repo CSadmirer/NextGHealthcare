@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clinic Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page">
+  <div class="topbar">
+    <h1>Clinic Dashboard</h1>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Quick Add Patient</h2>
+      <input id="p_name" placeholder="Full name">
+      <input id="p_phone" placeholder="Phone">
+      <input id="p_age" placeholder="Age" type="number">
+      <button onclick="addPatient()">Save</button>
+    </section>
+
+    <section class="card">
+      <h2>Search Patients</h2>
+      <input id="search_q" placeholder="Search by name">
+      <button onclick="searchPatients()">Search</button>
+      <div id="search_results"></div>
+    </section>
+
+    <section class="card">
+      <h2>Daily Appointments</h2>
+      <input id="clinic_id" placeholder="Clinic ID" value="1" type="number">
+      <button onclick="loadAppointments()">Refresh</button>
+      <div id="appointments"></div>
+    </section>
+
+    <section class="card">
+      <h2>AI / Triage</h2>
+      <button onclick="runDemo()">Run demo pipeline</button>
+      <pre id="pipeline_output"></pre>
+    </section>
+  </div>
+
+  <script src="auth.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
