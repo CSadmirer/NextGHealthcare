@@ -47,7 +47,7 @@ Redis (Caching / Auth)
 
 1. Clone Repo
 
-git clone https://github.com/your-username/hca_saas.git
+git clone https://github.com/CSADMIRER/hca_saas.git
 cd hca_saas
 
 
